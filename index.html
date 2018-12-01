@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookly</title>
+    <link rel="stylesheet" href="/assets/stylesheets/stylo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <main>
+      <div class="bookly-wrapper">
+        <h1>Bookly</h1>
+        <div class="create-input">
+          <input type="text" id="genre-option" placeholder="Add Genre">
+          <button type="submit" class="add-genre">Add Genre</button>
+        </div>
+        <p class="check-genre">This Genre is already added!</p>
+        
+        <div class="add-book-title">
+          <input type="text" id="user-input" placeholder="Add a book name">
+          <select class="user-select">
+            <option value="fantasy">Fantasy</option>
+            <option value="humor">Humor</option>
+            <option value="sci_fi">Sci-fi</option>
+            <option value="suspense">Suspense</option>
+            <option value="biography">Biography</option>
+            <option value="philosophy">Philosophy</option>
+          </select>
+        </div>
+        <div class="search-bar">
+          <input id="search-text" type="text" placeholder="Search">
+        </div>
+        
+        <div class="display-lists">
+          <ul class="book-lists">
+            
+          </ul>
+        </div>
+        
+      </div>
+    </main>
+
+
+
+
+    <script src="./assets/src/main.js"></script>
+  </body>
+</html>
