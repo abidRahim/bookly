@@ -5,24 +5,25 @@ var readList = [];
 var searchedObj = {};
 
 var sourceObj = {
+biography: [{title: "The Autobiography of Malcolm X", genre: "biography", id:129823, flag:false},
+            {title: "The Diary of a Young Girl", genre: "biography", id:129824, flag:false},
+            {title: "Becoming", genre: "biography", id:129825, flag:false},
+            {title: "A Life of Nietzsche", genre: "biography", id:129826, flag:false},],
+
 fantasy: [{title: "The Hobit", genre: "fantasy", id:123123, flag:false},
             {title: "Game of Thrones", genre: "fantasy", id:123124, flag:false},
             {title: "The Final Empire", genre: "fantasy", id:123125, flag:false},
             {title: "Clash of Kings", genre: "fantasy", id:123126, flag:false},],
 
-  humor: [{title: "The Hitchhiker's Guide to the Galaxy", genre: "humor", id:123542, flag:false},
-          {title: "Bossypants", genre: "humor", id:123544, flag:false},
-          {title: "Good Omens", genre: "humor", id:123545, flag:false},
-          {title: "Is Everyone Hanging Out Without Me?", genre: "humor", id:123547, flag:false},],
+humor: [{title: "The Hitchhiker's Guide to the Galaxy", genre: "humor", id:123542, flag:false},
+        {title: "Bossypants", genre: "humor", id:123544, flag:false},
+        {title: "Good Omens", genre: "humor", id:123545, flag:false},
+        {title: "Is Everyone Hanging Out Without Me?", genre: "humor", id:123547, flag:false},],
 
   sci_fi: [],
 
   suspense: [],
 
-  biography: [{title: "Malcolm X", genre: "biography", id:129823, flag:false},
-              {title: "Aganpankh", genre: "biography", id:129824, flag:false},
-              {title: "Becoming", genre: "biography", id:129825, flag:false},
-              {title: "The Diary of a Young Girl", genre: "biography", id:129826, flag:false},],
 
   philosophy: []
 }
@@ -99,7 +100,7 @@ function searchBooks(e) {
       displayLists.innerHTML = "";
       for(item in sourceObj) {
         if (sourceObj[item].length != 0 ) {
-        searchedArr = sourceObj[item].filter( val => val.title.toLowerCase().includes(searchText.value) );
+        searchedArr = sourceObj[item].filter( val => val.title.toLowerCase().includes(searchText.value.toLowerCase()) );
         
         searchedObj[item] = searchedArr;
         }

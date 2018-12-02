@@ -62,7 +62,8 @@ p {
 input {
 	margin: 15px;
 	padding: 5px;
-	border-radius: 4px;0
+	border-radius: 4px;
+	font-size: 0.9rem;
 }
 
 .check-genre {
@@ -74,9 +75,27 @@ input {
 	color: red;
 }
 
+.add-genre {
+	background: transparent;
+	border: 3px solid rgb(71, 71, 71);
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+.add-genre:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+
+/* .add-genre:focus {
+	background: rgba(178, 34, 34, 0.507);
+	outline: none;
+} */
+
 h3 {
 	font-weight: 600;
 	font-size: 1.5rem;
+	text-decoration: underline;
 }
 
 .card {
@@ -87,4 +106,19 @@ h3 {
 	margin: 20px;
 	padding: 10px;
 	border-radius: 7px;
+}
+
+select {
+	background: transparent;
+	padding: 5px 20px;
+	border-radius: 4px;
+}
+
+mark {
+	background: firebrick;
+	padding: 20px;
+	color: white;
+	border-radius: 10px;
+	text-decoration: underline;
+	line-height: 1.2;
 }
